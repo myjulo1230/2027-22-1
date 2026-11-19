@@ -10,19 +10,26 @@
       padding: 0;
       background-color: #111111;
       display: flex;
-      justify-content: center;
-      align-items: flex-start;
+      flex-direction: column; /* 이미지를 세로(위아래)로 배치 */
+      align-items: center;
       min-height: 100vh;
+    }
+    .container {
+      width: 100%;
+      max-width: 600px;
     }
     img {
       width: 100%;
-      max-width: 600px; /* PC에서 볼 때도 너무 커지지 않게 제한 */
       height: auto;
       display: block;
+      margin-bottom: 16px
     }
   </style>
 </head>
 <body>
-  <img src="2027수능이벤트렌즈.png" alt="행사 안내 포스터">
+  <div class="container">
+    <img src="2027수능이벤트렌즈.png" alt="2027수능이벤트렌즈">
+    <img src="2027 블랙브라이데이이벤트렌즈.eng" alt="2027 블랙브라이데이이벤트렌즈">
+  </div>
 </body>
 </html>
